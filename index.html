@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- On an iPhone, notifications work only once the site is added to the
+         Home Screen. This file lets it open there like an app. -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>UCCP Bradford - FaithBook — Book a court</title>
+    <script>
+      // Set the theme before the page paints, so a dark page does not flash white.
+      // src/ui/theme.ts owns the setting once the app loads.
+      try {
+        var theme = localStorage.getItem('theme');
+        if (
+          theme === 'dark' ||
+          (theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)
+        )
+          document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/assets/index-Ctvn1Pcj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dg89qjA3.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
